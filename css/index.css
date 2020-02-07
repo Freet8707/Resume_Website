@@ -146,7 +146,6 @@ body {
   width: 100%;
   color: #2e0b3d;
   margin: 50px 0 0 0;
-  padding-left: 12px;
   font-size: 2.5rem;
   text-decoration: none;
 }
@@ -162,6 +161,11 @@ body {
   border: 1px solid black;
   background-color: #4bc165;
 }
+@media (max-width: 750px) {
+  .sidebarLinks {
+    height: 2091px;
+  }
+}
 .sidebarLinks nav {
   height: 100%;
   display: flex;
@@ -174,9 +178,9 @@ body {
   width: 100%;
   color: #2e0b3d;
   margin: 50px 0 0 0;
-  padding-left: 12px;
   font-size: 2.5rem;
   text-decoration: none;
+  font-size: 1.6rem;
 }
 .container {
   height: 1491px;
@@ -186,7 +190,12 @@ body {
   background: #d8edcb;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 600px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1200px;
+}
+@media (max-width: 750px) {
+  .container {
+    height: 2091px;
+  }
 }
 .container .basicInfo {
   border: 1px dashed #4b4c4b;
