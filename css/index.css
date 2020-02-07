@@ -143,9 +143,10 @@ body {
 .sideLinks {
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
-  width: 100%;
+  max-width: 95%;
   color: #2e0b3d;
   margin: 50px 0 0 0;
+  padding-left: 5%;
   font-size: 2.5rem;
   text-decoration: none;
 }
@@ -175,12 +176,17 @@ body {
 .sidebarLinks nav a {
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
-  width: 100%;
+  max-width: 95%;
   color: #2e0b3d;
   margin: 50px 0 0 0;
+  padding-left: 5%;
   font-size: 2.5rem;
   text-decoration: none;
-  font-size: 1.6rem;
+}
+@media (max-width: 750px) {
+  .sidebarLinks nav a {
+    font-size: 1.6rem;
+  }
 }
 .container {
   height: 1491px;
@@ -190,11 +196,12 @@ body {
   background: #d8edcb;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1200px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 600px;
 }
 @media (max-width: 750px) {
   .container {
     height: 2091px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1200px;
   }
 }
 .container .basicInfo {
